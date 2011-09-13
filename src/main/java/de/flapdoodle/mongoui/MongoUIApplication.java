@@ -23,6 +23,7 @@ import com.vaadin.ui.Window;
 import com.vaadin.ui.Button.ClickEvent;
 
 import de.flapdoodle.mongoui.ui.ConfigDatabase;
+import de.flapdoodle.mongoui.ui.VaadinUIComp;
 
 
 public class MongoUIApplication  extends Application{
@@ -41,6 +42,7 @@ public class MongoUIApplication  extends Application{
 		window.addComponent(button);
 		
 		window.addComponent(new ConfigDatabase());
+		window.addComponent(new VaadinUIComp());
 	}
 
 }
